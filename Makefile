@@ -5,12 +5,14 @@ objects = main.o Point.o Rectangle.o
 
 prog_name = a.out
 
-main: $(objects)
+$(prog_name): $(objects)
 	$(CXX) $(CXXFLAGS) -o $(prog_name) $(objects)
 
 main.o: Point.h Rectangle.h
 Point.o: Point.h
 Rectangle.o: Rectangle.h Point.h
+
+all: $(prog_name)
 
 .PHONY: clean
 clean:

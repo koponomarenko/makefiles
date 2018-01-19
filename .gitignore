@@ -1,3 +1,6 @@
+# Vim open files
+*.swp
+
 # Prerequisites
 *.d
 

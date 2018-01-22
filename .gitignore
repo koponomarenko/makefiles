@@ -1,3 +1,8 @@
+# Ignore Eclipse proj files
+.cproject
+.project
+.settings/
+
 # Vim open files
 *.swp
 
